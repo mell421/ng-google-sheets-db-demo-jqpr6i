@@ -6,6 +6,7 @@ import { GoogleSheetsDbService } from 'ng-google-sheets-db';
 
 import { environment } from '../environments/environment';
 import { LD, LDAttributesMapping } from './LD.model';
+import { Tracker, TrackerAttributesMapping } from './Tracker.model';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { LD, LDAttributesMapping } from './LD.model';
 })
 export class AppComponent implements OnInit {
   LDs$: Observable<LD[]>;
+  Trackers$: Observable<Tracker[]>;
 
   constructor(private googleSheetsDbService: GoogleSheetsDbService) {}
 
@@ -21,6 +23,12 @@ export class AppComponent implements OnInit {
     this.LDs$ = this.googleSheetsDbService.getActive<LD>(
       environment.LD.spreadsheetId,
       environment.LD.worksheetName,
+      LDAttributesMapping,
+      'Active'
+    );
+    this.Trackers$ = this.googleSheetsDbService.getActive<Tracker>(
+      environment.Tracker.spreadsheetId,
+      environment.Tracker.worksheetName,
       LDAttributesMapping,
       'Active'
     );

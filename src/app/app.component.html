@@ -39,7 +39,47 @@
 <section class="example">
   <div class="container">
     <h3>Example</h3>
-    <div *ngIf="LDs$ | async as LDs; else loading">
+    <div *ngIf="Trackers$ | async as Trackers; else loading">
+      <div *ngFor="let Tracker of Trackers" class="Tracker-card">
+        <div class="name">
+          {{ Tracker.y }}
+        </div>
+        <div class="row">
+          <div class="column">
+            <table class="email-contact">
+              <tr>
+                <td>
+                  <svg style="width:14px;height:14px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+                    />
+                  </svg>
+                </td>
+                <td class="saison">
+                  {{ Tracker.Titre || '-' }}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg style="width:14px;height:14px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                    />
+                  </svg>
+                </td>
+                <td>{{ Tracker.reste }}<br /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>Example 2</h3>
+    <!--<div *ngIf="LDs$ | async as LDs; else loading">
       <div *ngFor="let LD of LDs" class="LD-card">
         <div class="name">
           {{ LD.Titre }}
@@ -79,6 +119,7 @@
         </div>
       </div>
     </div>
+    -->
     <ng-template #loading>
       <div class="loading">
         <div class="lds-ripple">

@@ -9,6 +9,10 @@ export const environment = {
     spreadsheetId: '1HZydd6qo-GcQVqnwQnerHHnMEyR6faJXKN7Egkuqp4I',
     worksheetName: 'LD',
   },
+  Tracker: {
+    spreadsheetId: '1HZydd6qo-GcQVqnwQnerHHnMEyR6faJXKN7Egkuqp4I',
+    worksheetName: 'Tracker',
+  },
 };
 
 /*
