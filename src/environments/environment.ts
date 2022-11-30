@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   googleSheetsApiKey: 'AIzaSyD-Nkv-g1682kKdauukFPmOCNaQk0wP540',
-  characters: {
-    spreadsheetId: '1gSc_7WCmt-HuSLX01-Ev58VsiFuhbpYVo8krbPCvvqA',
-    worksheetName: 'Characters',
+  LD: {
+    spreadsheetId: '1HZydd6qo-GcQVqnwQnerHHnMEyR6faJXKN7Egkuqp4I',
+    worksheetName: 'LD',
   },
 };
 

@@ -23,19 +23,19 @@ a {
     left: -1rem;
     max-width: 2rem;
     position: relative;
-    top: .6rem;
+    top: 0.6rem;
   }
 }
 
 pre {
- border-left-color: $primaryColor;
+  border-left-color: $primaryColor;
 }
 
 .navigation {
   $navigationHeight: 5.2rem;
 
   background: #ffffff;
-  border-bottom: .1rem solid #d1d1d1;
+  border-bottom: 0.1rem solid #d1d1d1;
   display: block;
   min-height: $navigationHeight;
   width: 100%;
@@ -61,7 +61,7 @@ pre {
   svg {
     $verticalPadding: 7px;
     margin-top: $verticalPadding;
-    margin-bottom: -1* $verticalPadding;
+    margin-bottom: -1 * $verticalPadding;
   }
 }
 
@@ -75,14 +75,15 @@ pre {
   }
 }
 
-.character-card {
+.LD-card {
   max-width: 500px;
   margin: 20px auto;
   padding: 10px 15px 5px;
   background-color: #ffffff;
   border-top: 2px solid $primaryColor;
   border-radius: 3px;
-  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
+    0 1px 3px 1px rgba(66, 66, 66, 0.16);
   font-size: 14px;
   font-weight: 300;
 
@@ -93,7 +94,7 @@ pre {
     margin-bottom: 10px;
   }
 
-  table.email-contact {
+  table.LD-detail {
     margin-bottom: 0;
 
     > tr {
@@ -105,24 +106,8 @@ pre {
       }
     }
 
-    .email {
+    .saison {
       font-style: italic;
-    }
-  }
-
-  .skills {
-    margin-top: 5px;
-
-    span {
-      font-size: 16px;
-    }
-
-    li {
-      margin-bottom: 0.2rem;
-
-      &.no-skills {
-        font-style: italic;
-      }
     }
   }
 }
@@ -175,7 +160,7 @@ pre {
 .why {
   margin: 30px auto;
   padding: 20px;
-  background-color: rgba($primaryColor, .2);
+  background-color: rgba($primaryColor, 0.2);
   border-radius: 3px;
   font-size: 18px;
 }

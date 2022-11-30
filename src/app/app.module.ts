@@ -8,20 +8,15 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [
     {
       provide: API_KEY,
       useValue: environment.googleSheetsApiKey,
     },
-    GoogleSheetsDbService
+    GoogleSheetsDbService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
