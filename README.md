@@ -1,1 +1,1 @@
-[index](./environments/index.html)
+[index](./index.html)
