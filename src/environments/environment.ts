@@ -11,7 +11,7 @@ export const environment = {
   },
   Tracker: {
     spreadsheetId: '1HZydd6qo-GcQVqnwQnerHHnMEyR6faJXKN7Egkuqp4I',
-    worksheetName: 'Tracker',
+    worksheetName: 'tracker',
   },
 };
 

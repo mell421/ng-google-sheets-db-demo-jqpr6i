@@ -76,10 +76,18 @@
         </div>
       </div>
     </div>
+    <ng-template #loading>
+      <div class="loading">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </ng-template>
   </div>
   <div class="container">
-    <h3>Example 2</h3>
-    <!--<div *ngIf="LDs$ | async as LDs; else loading">
+    <!--<h3>Example 2</h3>
+    <div *ngIf="LDs$ | async as LDs; else loading">
       <div *ngFor="let LD of LDs" class="LD-card">
         <div class="name">
           {{ LD.Titre }}
@@ -120,14 +128,6 @@
       </div>
     </div>
     -->
-    <ng-template #loading>
-      <div class="loading">
-        <div class="lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </ng-template>
   </div>
 </section>
 
@@ -135,7 +135,7 @@
   <section>
     <div class="container">
       Made with ♥ by
-      <a href="https://www.diebold.io" target="_blank">Franz Diebold</a>.
+      <a href="https://www.diebold.io" target="_blank">ME</a>.
     </div>
   </section>
 </footer>

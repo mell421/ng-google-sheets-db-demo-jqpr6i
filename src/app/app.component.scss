@@ -112,6 +112,42 @@ pre {
   }
 }
 
+.Tracker-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px 15px 5px;
+  background-color: #ffffff;
+  border-top: 2px solid $primaryColor;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
+    0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  font-size: 14px;
+  font-weight: 300;
+
+  .name {
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+  }
+
+  table.LD-detail {
+    margin-bottom: 0;
+
+    > tr {
+      vertical-align: top;
+
+      td {
+        border-bottom: none;
+        padding: 0.5rem 0.3rem;
+      }
+    }
+
+    .saison {
+      font-style: italic;
+    }
+  }
+}
 .loading {
   padding-top: 40px 0;
   text-align: center;
