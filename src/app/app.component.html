@@ -39,7 +39,7 @@
 <section class="example">
   <div class="container">
     <h3>Example</h3>
-    <div *ngIf="Trackers$ | async as Trackers; else loading">
+    <div *ngIf="Trackers$ | async as Trackers;">
       <div *ngFor="let Tracker of Trackers" class="Tracker-card">
         <div class="name">
           {{ Tracker.y }}
@@ -76,14 +76,7 @@
         </div>
       </div>
     </div>
-    <ng-template #loading>
-      <div class="loading">
-        <div class="lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </ng-template>
+    
   </div>
   <div class="container">
     <!--<h3>Example 2</h3>

@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     this.Trackers$ = this.googleSheetsDbService.getActive<Tracker>(
       environment.Tracker.spreadsheetId,
       environment.Tracker.worksheetName,
-      LDAttributesMapping,
+      TrackerAttributesMapping,
       'Active'
     );
   }
